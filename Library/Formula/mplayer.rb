@@ -55,6 +55,7 @@ class Mplayer < Formula
       --disable-cdparanoia
       --prefix=#{prefix}
       --disable-x11
+      --extra-libs-mencoder=-framework\ Carbon
     ]
 
     args << "--enable-caca" if build.with? "libcaca"
